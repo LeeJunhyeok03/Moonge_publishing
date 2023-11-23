@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div id="wrap">
+        <header>
+            <div class="inner_wrap">
+                <div id="header_nav">
+                    <span id="nav_now">동네</span>
+                    <img src="./image/icon/arr_bottom.png" alt!="">
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="./image/logo.png" alt="">
+                    </a>
+                </div>
+                <div id="header_btns">
+                    <i id="bell_btn">
+                        <img src="./image/icon/bell.png" alt="">
+                    </i>
+                    <i id="search_btn">
+                        <img src="./image/icon/search.png" alt="">
+                    </i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="inner_wrap">
+                <form id="writing" action="" method="post">
+                    <div class="save_btn">
+                        <button id="temporary_save" class="hr" type="submit">임시 저장</button>
+                        <button id="save" class="hr" type="submit" >등록</button>
+                    </div>
+                    <input type="text" id="title" placeholder="제목">
+                    <textarea name="content" id="content" placeholder="내용"></textarea>
+                    <input type="file" name="photo" id="photo" accept="image/*" onchange="readURL(this)" multiple hidden>
+                </form>
+                <label for="photo" id="photos">
+                    <div class="img_box">
+                        <img src="./image/icon/camera.png" alt="">
+                    </div>
+                </label>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="inner_wrap">
+                <div id="footer_btns">
+                    <div id="home">
+                        <a href="./home.html">
+                            <img src="./image/icon/home.png" alt="">
+                        </a>
+                    </div>
+                    <div id="map">
+                        <a href="./map.html">
+                            <img src="./image/icon/map.png" alt="">
+                        </a>
+                    </div>
+                    <div id="book">
+                        <a href="./book.html">
+                            <img src="./image/icon/book.png" alt="">
+                        </a>
+                    </div>
+                    <div id="mypage">
+                        <a href="./mypage.html">
+                            <img src="./image/icon/mypage.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="search_modal">
+            <div class="search_box">
+                <form action="" method="post">
+                    <div class="search_txt">
+                        <input type="text" class="hr" name="search_txt" id="search_txt" placeholder="검색어를 입력하세요.">
+                    </div>
+                    <button id="search_ok" type="submit">검색</button>
+                </form>
+            </div>
+            <div class="search_ranking">
+                <div class="inner_wrap">
+                    <h3>실시간 인기 검색어 TOP</h3>
+                    <ul class="search_ranking_list">
+                        <li><span>1</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>2</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>3</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>4</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>5</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>6</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>7</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>8</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>9</span><p class="hr">이 병원 추천합니다.</p></li>
+                        <li><span>10</span><p class="hr">이 병원 추천합니다.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="./js/main.js"></script>
+</html>
